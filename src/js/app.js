@@ -1,1 +1,1 @@
-var app = angular.module('shoppingCartApp', []);
+var app = angular.module('shoppingCartApp', ['ngRoute']);

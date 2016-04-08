@@ -1,7 +1,7 @@
-app.directive('name', function () {
+app.directive('myHeader', function () {
   return {
-    restrict: '',
+    restrict: 'E',
     //transclude if image
-    templateUrl: '../directives/' + filename
+    templateUrl: '../directives/header.html'
   }
 });
