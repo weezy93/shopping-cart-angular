@@ -1,7 +1,20 @@
-app.directive('name', function () {
+app.directive('myHeader', function () {
   return {
-    restrict: '',
+    restrict: 'E',
     //transclude if image
-    templateUrl: '../directives/' + filename
+    templateUrl: '../directives/header.html'
+  }
+})
+.directive('searchBar', function () {
+  return {
+    restrict: 'E',
+    templateUrl: '../directives/searchBar.html'
+  }
+})
+.directive('cartItem', function () {
+  return {
+    restrict: 'E',
+    templateUrl: '../directives/cartItem.html',
+    css: './css/cart.css'
   }
 });

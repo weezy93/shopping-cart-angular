@@ -1,0 +1,5 @@
+/* for cart / checkout page */
+section {
+  display: flex;
+  flex-flow: column;
+}
