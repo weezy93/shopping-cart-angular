@@ -14,6 +14,7 @@ app.directive('myHeader', function () {
 .directive('cartItem', function () {
   return {
     restrict: 'E',
-    templateUrl: '../directives/cartItem.html'
+    templateUrl: '../directives/cartItem.html',
+    css: './css/cart.css'
   }
 });

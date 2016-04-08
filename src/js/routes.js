@@ -3,7 +3,7 @@ app.config(function ($routeProvider) {
   .when('/', {
     templateUrl: 'partials/main.html',
     controller: 'productController',
-    css: 'css/main.css'
+    css: './css/main.css'
   })
   // .when('/about', {
   //   templateUrl: 'partials/about.html'
@@ -18,7 +18,7 @@ app.config(function ($routeProvider) {
   .when('/cart', {
     templateUrl: 'partials/cart.html',
     controller: 'cartController',
-    css: 'css/cart.css'
+    css: './css/cart.css'
   })
   .otherwise('/');
 });
