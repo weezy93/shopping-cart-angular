@@ -1,11 +1,14 @@
-app.service('shoppingCartService', [ function () {
+angular.module('shoppingCartApp')
+.service('shoppingCartService', [function () {
   return {
-    getItems: function (id) {
-      if (id) {
-        // return single item
-      } else {
-        // return all items
-      }
+    getItems: function () {
+      return teas;
+      //
+      // if (id) {
+      //   // return single item
+      // } else {
+      //   // return all items
+      // }
     },
     addItemToCart: function () {
       // add to cart
