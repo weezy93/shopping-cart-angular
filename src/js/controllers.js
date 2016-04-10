@@ -1,4 +1,7 @@
-app.controller('productController', ['$scope', 'shoppingCartService', function ($scope, shoppingCartService) {
+'use strict';
+
+angular.module('shoppingCartApp')
+.controller('productController', ['$scope', 'shoppingCartService', function ($scope, shoppingCartService) {
   $scope.greeting = "Hello World!";
   $scope.products = shoppingCartService.getItems();
 }])

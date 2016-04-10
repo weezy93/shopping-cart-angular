@@ -1,4 +1,7 @@
-app.service('shoppingCartService', [ function () {
+'use strict';
+
+angular.module('shoppingCartApp')
+.service('shoppingCartService', [ function () {
   return {
     getItems: function (id) {
       if (id) {

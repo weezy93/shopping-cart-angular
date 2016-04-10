@@ -1,24 +1,16 @@
-app.config(function ($routeProvider) {
+'use strict';
+
+angular.module('shoppingCartApp')
+.config(function ($routeProvider) {
   $routeProvider
   .when('/', {
     templateUrl: 'partials/main.html',
-    controller: 'productController',
-    css: './css/main.css'
+    controller: 'productController'
   })
-  // .when('/about', {
-  //   templateUrl: 'partials/about.html'
-  //  controller: 'aboutController'
-  //   css: 'css/about.css'
-  // })
-  // .when('/contact', {
-  //   templateUrl: 'partials/about.html',
-  //   controller: 'aboutController',
-  //   css: 'css/about.css'
-  // })
   .when('/cart', {
     templateUrl: 'partials/cart.html',
     controller: 'cartController',
-    css: './css/cart.css'
+    css: 'css/cart.css'
   })
   .otherwise('/');
 });

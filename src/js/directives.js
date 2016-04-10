@@ -1,4 +1,7 @@
-app.directive('myHeader', function () {
+'use strict';
+
+angular.module('shoppingCartApp')
+.directive('myHeader', function () {
   return {
     restrict: 'E',
     //transclude if image
@@ -15,6 +18,6 @@ app.directive('myHeader', function () {
   return {
     restrict: 'E',
     templateUrl: '../directives/cartItem.html',
-    css: './css/cart.css'
+    // css: './css/cart.css'
   }
 });
