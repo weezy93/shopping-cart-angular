@@ -25,4 +25,10 @@ angular.module('shoppingCartApp')
     restrict: 'E',
     templateUrl: '../directives/teaCategories.html'
   }
+})
+.directive('deleteItem', function () {
+  return {
+    restrict: 'E',
+    templateUrl: '../directives/deleteItem.html'
+  }
 });
