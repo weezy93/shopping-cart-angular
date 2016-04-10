@@ -6,14 +6,15 @@ angular.module('shoppingCartApp')
   $scope.chooseQuantity = shoppingCartService.quantity;
 
   $scope.teas = shoppingCartService.getItems();
+
   $scope.addItemToCart = function (tea, quantity) {
     shoppingCartService.addItemToCart(tea, quantity);
-    console.log(shoppingCartService.cart);
   };
 }])
+
 .controller('cartController', ['$scope', 'shoppingCartService', function ($scope, shoppingCartService) {
   $scope.cart = shoppingCartService.cart;
-  console.log($scope.cart);
+  console.log($scope.cart[0]);
   $scope.chooseQuantity = shoppingCartService.quantity;
   $scope.updateItemInCart = function (id, quantity) {
     console.log(shoppingCartService.updateItemInCart(id, quantity));
