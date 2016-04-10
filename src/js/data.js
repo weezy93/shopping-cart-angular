@@ -1,4 +1,4 @@
-[
+var teas = [
     {
         "_id": "55c8ee82152165d244b98300",
         "name": "Bayard stew",
@@ -120,4 +120,4 @@
         "__v": 0,
         "categories": ["spring", "warm","winter"]
     }
-]
+];

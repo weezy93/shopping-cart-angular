@@ -18,6 +18,11 @@ angular.module('shoppingCartApp')
   return {
     restrict: 'E',
     templateUrl: '../directives/cartItem.html',
-    // css: './css/cart.css'
+  }
+})
+.directive('teaCategories', function () {
+  return {
+    restrict: 'E',
+    templateUrl: '../directives/teaCategories.html'
   }
 });

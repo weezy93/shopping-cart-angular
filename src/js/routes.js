@@ -5,7 +5,8 @@ angular.module('shoppingCartApp')
   $routeProvider
   .when('/', {
     templateUrl: 'partials/main.html',
-    controller: 'productController'
+    controller: 'productController',
+    css: 'css/main.css'
   })
   .when('/cart', {
     templateUrl: 'partials/cart.html',

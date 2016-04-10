@@ -1,22 +1,22 @@
 <section class="u-full-width">
-  <img ng-src="{{ cart[index].imageUrl }}" alt="" />
+  <img ng-src="{{ tea.imageUrl }}" alt="" />
   <div class="cartItem">
     <ul>
-      <li><h6>{{ cart[index].name }}</h6></li>
-      <li>Price: {{ cart[index].price }}</li>
-      <li>Caffeine Scale: {{ cart[index].caffeineScale }}</li>
-      <li>Ingredients: {{ cart[index].ingredients }}</li>
-      <li>Rating: {{ cart[index].rating }}</li>
-      <li>In Stock? {{ cart[index].inStock }}</li>
-      <li>Categories: {{ cart[index].categories }}
+      <li><h6>{{ tea.name }}</h6></li>
+      <li>Price: {{ tea.price }}</li>
+      <li>Caffeine Scale: {{ tea.caffeineScale }}</li>
+      <li>Ingredients: {{ tea.ingredients }}</li>
+      <li>Rating: {{ tea.rating }}</li>
+      <li>In Stock? {{ tea.inStock }}</li>
+      <li>Categories: {{ tea.categories }}
         <ul>
-          <li ng-repeat="category in cart[index].categories track by $index">{{ category }}</li>
+          <li ng-repeat="category in tea.categories track by $index">{{ category }}</li>
         </ul>
       </li>
     </ul>
   </div>
   <div class="quantity">
-    <label for="quanity">Quanity</label>
+    <label for="quanity">Quantity</label>
     <select name="quantity" id="quantity">
       <option value="1">1</option>
       <option value="2">2</option>
@@ -29,10 +29,9 @@
       <option value="9">9</option>
       <option value="10">10</option>
     </select>
-    <input type="button" class="button">
+    <input type="button" class="button" value="Add To Cart">
   </div>
 </section>
-
 
 <!-- customer filter to fix prices -->
 <!-- create custom filter to change instock true/false to 'heck yes' or sorry, no -->
