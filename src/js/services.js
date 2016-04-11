@@ -57,5 +57,5 @@ angular.module('shoppingCartApp')
       this.cart = [];
       return this.cart;
     }
-  }
+  };
 }]);
