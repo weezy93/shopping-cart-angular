@@ -7,7 +7,7 @@
       <li>Caffeine Scale: {{ tea.caffeineScale }}</li>
       <li>Ingredients: {{ tea.ingredients }}</li>
       <li>Rating: {{ tea.rating }}</li>
-      <li>In Stock? {{ tea.inStock }}</li>
+      <li>In Stock? {{ tea.inStock | inStock }}</li>
       <li>Categories: {{ tea.categories }}
         <ul>
           <li ng-repeat="category in tea.categories track by $index">{{ category }}</li>

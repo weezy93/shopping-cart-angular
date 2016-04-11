@@ -9,3 +9,12 @@ angular.module('shoppingCartApp')
     return splitInput.join();
   };
 })
+.filter('inStock', function () {
+  return function (input) {
+    if (input === true) {
+      return 'You bet!';
+    } else {
+      return 'Sorry, no';
+    }
+  };
+});
