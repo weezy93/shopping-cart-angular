@@ -44,5 +44,9 @@ angular.module('shoppingCartApp')
       this.cart.splice(index, 1);
       return this.cart;
     },
+    deleteAllFromCart: function () {
+      this.cart = [];
+      return this.cart;
+    }
   }
 }]);
