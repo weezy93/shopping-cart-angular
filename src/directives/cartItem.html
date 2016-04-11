@@ -3,7 +3,7 @@
   <div class="cartItem">
     <ul>
       <li><h6>{{ tea.name }}</h6></li>
-      <li>Price: {{ tea.price }}</li>
+      <li>Price: {{ tea.price | fixPrice | currency }}</li>
       <li>Caffeine Scale: {{ tea.caffeineScale }}</li>
       <li>Ingredients: {{ tea.ingredients }}</li>
       <li>Rating: {{ tea.rating }}</li>
