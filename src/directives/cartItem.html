@@ -23,7 +23,7 @@
       <li>Ingredients: {{ tea.ingredients }}</li>
       <li>Rating: {{ tea.rating }}</li>
       <li>In Stock? {{ tea.inStock | inStock }}</li>
-      <li>Categories: <span ng-repeat="category in tea.categories track by $index">-{{ category }}- </span>
+      <li>Categories: <span ng-repeat="category in tea.categories"> {{ category }} </span>
       </li>
     </ul>
   </div>

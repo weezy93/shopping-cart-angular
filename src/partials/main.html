@@ -1,6 +1,6 @@
 <search-bar class="u-full-width"></search-bar>
 
 <hr>
-<div id="allTeas" class="u-full-width" ng-repeat="tea in teas track by $index ">
-  <cart-item></cart-item>
+<div id="allTeas" class="u-full-width" >
+  <cart-item ng-repeat="tea in teas | filter:search"></cart-item>
 </div>

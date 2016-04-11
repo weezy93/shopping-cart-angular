@@ -8,7 +8,7 @@
         id="category"
         class="twelve columns"
         name="select"
-        ng-model="searchCategory"
+        ng-model="search.categories"
         ng-options="value.category as value.category for value in categories">
           <option>--</option>
         </select>
@@ -17,7 +17,7 @@
 
       <div class="six columns">
         <label for="teaName">Search By Name:</label>
-        <input class="twelve columns" type="text" name="teaName" placeholder="tea" id="teaName" ng-model="search">
+        <input class="twelve columns" type="text" name="teaName" placeholder="tea" id="teaName" ng-model="search.name">
       </div>
 
     </div> <!-- end row div -->

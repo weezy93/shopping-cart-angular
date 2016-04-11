@@ -4,7 +4,7 @@ angular.module('shoppingCartApp')
 .controller('productController', ['$scope', 'shoppingCartService', function ($scope, shoppingCartService) {
 
   $scope.chooseQuantity = shoppingCartService.quantity;
-  $scope.searchCategory = '';
+  // $scope.searchCategory = '';
   $scope.teas = shoppingCartService.getItems();
   $scope.categories = shoppingCartService.categories;
   $scope.addItemToCart = function (tea, quantity) {
