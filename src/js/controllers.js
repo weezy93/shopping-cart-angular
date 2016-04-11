@@ -13,13 +13,13 @@ angular.module('shoppingCartApp')
   };
 }])
 
-.controller('cartController', ['$scope', 'shoppingCartService', function ($scope, shoppingCartService) {
+.controller('cartController', ['$scope', '$location', 'shoppingCartService', function ($scope, $location, shoppingCartService) {
 
   $scope.cart = shoppingCartService.cart;
   $scope.chooseQuantity = shoppingCartService.quantity;
-
+  console.log($scope.cart);
   $scope.updateItemInCart = function (id, quantity) {
-    console.log(shoppingCartService.updateItemInCart(id, quantity));
+    shoppingCartService.updateItemInCart(id, quantity);
   };
 
   $scope.deleteFromCart = function (tea) {
@@ -27,6 +27,7 @@ angular.module('shoppingCartApp')
   };
 
   $scope.deleteAllFromCart = function () {
-    shoppingCartService.deleteAllFromCart();
+    console.log(shoppingCartService.deleteAllFromCart());
+    $location.url('/#/');
   };
 }]);

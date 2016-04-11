@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 angular.module('shoppingCartApp')
 .config(function ($routeProvider) {
@@ -9,7 +9,7 @@ angular.module('shoppingCartApp')
     css: 'css/main.css'
   })
   .when('/cart', {
-    templateUrl: 'partials/cart.html',
+    templateUrl: 'partials/checkout.html',
     controller: 'cartController',
     css: 'css/cart.css'
   })

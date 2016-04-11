@@ -45,7 +45,6 @@ angular.module('shoppingCartApp')
         tea.quantity = quantity || 1;
         this.cart.push(tea);
       }
-      console.log('cart', this.cart);
       return this.cart;
     },
     deleteFromCart: function (tea) {
@@ -55,6 +54,7 @@ angular.module('shoppingCartApp')
     },
     deleteAllFromCart: function () {
       this.cart = [];
+      console.log(this.cart);
       return this.cart;
     }
   };

@@ -20,12 +20,6 @@ angular.module('shoppingCartApp')
     templateUrl: '../directives/cartItem.html',
   }
 })
-.directive('teaCategories', function () {
-  return {
-    restrict: 'E',
-    templateUrl: '../directives/teaCategories.html'
-  }
-})
 .directive('deleteItem', function () {
   return {
     restrict: 'E',
