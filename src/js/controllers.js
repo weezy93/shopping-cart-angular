@@ -15,7 +15,6 @@ angular.module('shoppingCartApp')
 .controller('cartController', ['$scope', 'shoppingCartService', function ($scope, shoppingCartService) {
 
   $scope.cart = shoppingCartService.cart;
-  console.log($scope.cart[0]);
   $scope.chooseQuantity = shoppingCartService.quantity;
 
   $scope.updateItemInCart = function (id, quantity) {
