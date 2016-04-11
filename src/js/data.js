@@ -18,7 +18,7 @@ var teas = [
         "ingredients": "fennel, nutmeg leaves, parsley, cream of 'cream of cream', blarney",
         "caffeineScale": 49,
         "price": 7348,
-        "inStock": true,
+        "inStock": false,
         "rating": 2,
         "imageUrl": "http://s7d5.scene7.com/is/image/Teavana/32303_d?$cimg$",
         "__v": 0,

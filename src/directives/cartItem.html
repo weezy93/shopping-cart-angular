@@ -1,7 +1,7 @@
 <section id="tea">
   <div class="image">
     <img ng-src="{{ tea.imageUrl }}" alt="" />
-    <div class="quantity">
+    <div class="quantity" ng-show="tea.inStock">
       <label for="quantity">Quantity: {{ tea.quantity }}</label>
       <select
         ng-model="quantity"
@@ -18,7 +18,7 @@
   <div class="cartItem">
     <ul>
       <li><strong>{{ tea.name }}</strong></li>
-      <li>Price: {{ tea.price | currency }}</li>
+      <li>Price: {{ tea.price | fixPrice | currency }}</li>
       <li>Caffeine Scale: {{ tea.caffeineScale }}</li>
       <li>Ingredients: {{ tea.ingredients }}</li>
       <li>Rating: {{ tea.rating }}</li>
@@ -29,6 +29,3 @@
   </div>
 
 </section>
-
-<!-- customer filter to fix prices -->
-<!-- create custom filter to change instock true/false to 'heck yes' or sorry, no -->
