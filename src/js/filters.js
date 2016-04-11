@@ -1,14 +1,10 @@
-// // create custom filter to change instock true/false to 'heck yes' or sorry, no
 'use strict';
 angular.module('shoppingCartApp')
-// .filter('fixPrice', function() {
-//   return function (input) {
-//     var splitInput = input.split('');
-//     var index = splitInput.length - 2;
-//     splitInput.splice(index, 0, '.');
-//     return splitInput.join();
-//   };
-// })
+.filter('fixPrice', function() {
+  return function (input) {
+    return input / 100;
+  };
+})
 .filter('inStock', function () {
   return function (input) {
     if (input === true) {

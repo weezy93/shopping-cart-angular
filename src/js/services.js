@@ -26,6 +26,18 @@ angular.module('shoppingCartApp')
           {"value": 9},
           {"value": 10},
     ],
+    categories: [
+          { 'category': 'dark' },
+          { 'category': 'cold' },
+          { 'category': 'awesome' },
+          { 'category': 'dry' },
+          { 'category': 'hot' },
+          { 'category': 'summer' },
+          { 'category': 'lucid' },
+          { 'category': 'warm' },
+          { 'category': 'winter' },
+          { 'category': 'spring' }
+    ],
     getItems: function () {
       return teas;
     },

@@ -1,5 +1,32 @@
 /* for cart / checkout page */
-section {
-  display: flex;
-  flex-flow: column;
+#deleteItem button, #deleteAll {
+  background-color: rgb(184, 58, 48);
+  color: white;
 }
+
+#tea {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+#tea * {
+  margin-left: auto;
+}
+
+#tea ul {
+  list-style: none;
+}
+
+.cartItem {
+  margin-top: 1rem;
+}
+
+.image, .cartItem {
+  width: 40%;
+  margin: auto;
+}
+
+/*#checkout {
+  display: flex;
+}*/

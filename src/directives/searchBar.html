@@ -1,24 +1,25 @@
-<section id="searchBar" class="u-full-width">
+<article id="searchBar" class="container">
   <form>
     <div class="row">
 
       <div class="six columns">
         <label for="category">Search by Category</label>
         <select
+        id="category"
         class="twelve columns"
-        name="select" id="category"
-        ng-model="category"
-        ng-options="category as category for category in categories">
+        name="select"
+        ng-model="search.categories"
+        ng-options="value.category as value.category for value in categories">
           <option>--</option>
-          <tea-categories></tea-categories>
         </select>
+
       </div>
 
       <div class="six columns">
         <label for="teaName">Search By Name:</label>
-        <input class="twelve columns" type="text" name="teaName" placeholder="tea" id="teaName" ng-model="search">
+        <input class="twelve columns" type="text" name="teaName" placeholder="tea" id="teaName" ng-model="search.name">
       </div>
 
     </div> <!-- end row div -->
   </form>
-</section>
+</article>
