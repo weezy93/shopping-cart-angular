@@ -6,6 +6,7 @@ angular.module('shoppingCartApp')
   $scope.chooseQuantity = shoppingCartService.quantity;
 
   $scope.teas = shoppingCartService.getItems();
+  $scope.categories = shoppingCartService.getCategories();
 
   $scope.addItemToCart = function (tea, quantity) {
     shoppingCartService.addItemToCart(tea, quantity);

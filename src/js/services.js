@@ -28,6 +28,14 @@ angular.module('shoppingCartApp')
     getItems: function () {
       return teas;
     },
+    getCategories : function () {
+        return Object.keys(teas.reduce(function (object, current) {
+          current.categories.forEach(function (category) {
+            object[category] = 1;
+          });
+          return object;
+        }, {}));
+      },
     addItemToCart: function (tea, quantity) {
       if (this.cart.indexOf(tea) !== -1) {
         var index = this.cart.indexOf(tea);
