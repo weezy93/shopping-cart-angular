@@ -1,4 +1,4 @@
-<section class="u-full-width">
+<section id="tea">
   <div class="image">
     <img ng-src="{{ tea.imageUrl }}" alt="" />
     <div class="quantity">
@@ -8,7 +8,9 @@
         ng-options="value.value as value.value for value in chooseQuantity">
           <option>--</option>
       </select>
-      <input type="button" class="button" value="Add To Cart" ng-click="addItemToCart(tea, quantity)">
+      <input type="button" class="button" value="Add To Cart" ng-click="addItemToCart(tea, quantity)"/>
+      <br>
+      <delete-item ng-show="checkout"></delete-item>
     </div>
   </div>
 

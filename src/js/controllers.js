@@ -6,18 +6,17 @@ angular.module('shoppingCartApp')
   $scope.chooseQuantity = shoppingCartService.quantity;
 
   $scope.teas = shoppingCartService.getItems();
-  $scope.categories = shoppingCartService.getCategories();
-
+  $scope.categories = shoppingCartService.categories;
   $scope.addItemToCart = function (tea, quantity) {
     shoppingCartService.addItemToCart(tea, quantity);
   };
 }])
 
 .controller('cartController', ['$scope', '$location', 'shoppingCartService', function ($scope, $location, shoppingCartService) {
-
+  $scope.checkout = true;
   $scope.cart = shoppingCartService.cart;
   $scope.chooseQuantity = shoppingCartService.quantity;
-  
+
   $scope.addItemToCart = function (id, quantity) {
     shoppingCartService.addItemToCart(id, quantity);
   };

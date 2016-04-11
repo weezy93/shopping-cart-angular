@@ -2,6 +2,8 @@
 <input type="button" class="button" id="deleteAll" ng-click="deleteAllFromCart()" value="Remove All From Cart"/>
 <hr>
 <div class="twelve columns" ng-repeat="tea in cart">
-  <cart-item></cart-item>
-  <delete-item></delete-item>
+  <div id="checkout" class="u-full-width">
+    <cart-item></cart-item>
+  </div>
+
 </div>

@@ -4,23 +4,29 @@
   color: white;
 }
 
-section {
+#tea {
   display: flex;
+  width: 80%;
+  margin: auto;
 }
 
-section * {
+#tea * {
   margin-left: auto;
 }
 
-.image {
-  margin-right: 4rem;
+#tea ul {
+  list-style: none;
 }
 
 .cartItem {
-  margin-right: 0;
-  font-size: 1rem;
+  margin-top: 1rem;
 }
 
-section ul {
-  list-style: none;
+.image, .cartItem {
+  width: 40%;
+  margin: auto;
 }
+
+/*#checkout {
+  display: flex;
+}*/

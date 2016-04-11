@@ -5,13 +5,14 @@
       <div class="six columns">
         <label for="category">Search by Category</label>
         <select
+        id="category"
         class="twelve columns"
-        name="select" id="category"
+        name="select"
         ng-model="category"
-        ng-options="category as category for category in categories">
+        ng-options="value.category as value.category for value in categories">
           <option>--</option>
-          <tea-categories></tea-categories>
         </select>
+
       </div>
 
       <div class="six columns">
