@@ -6,7 +6,7 @@ angular.module('shoppingCartApp')
   .when('/', {
     templateUrl: 'partials/main.html',
     controller: 'productController',
-    css: 'css/main.css'
+    css: 'css/cart.css'
   })
   .when('/cart', {
     templateUrl: 'partials/checkout.html',

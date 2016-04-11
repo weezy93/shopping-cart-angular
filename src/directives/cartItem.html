@@ -1,29 +1,31 @@
 <section class="u-full-width">
-  <img ng-src="{{ tea.imageUrl }}" alt="" />
+  <div class="image">
+    <img ng-src="{{ tea.imageUrl }}" alt="" />
+    <div class="quantity">
+      <label for="quantity">Quantity: {{ tea.quantity }}</label>
+      <select
+        ng-model="quantity"
+        ng-options="value.value as value.value for value in chooseQuantity">
+          <option>--</option>
+      </select>
+      <input type="button" class="button" value="Add To Cart" ng-click="addItemToCart(tea, quantity)">
+    </div>
+  </div>
+
+
   <div class="cartItem">
     <ul>
-      <li><h4>{{ tea.name }}</h4></li>
+      <li><strong>{{ tea.name }}</strong></li>
       <li>Price: {{ tea.price | currency }}</li>
       <li>Caffeine Scale: {{ tea.caffeineScale }}</li>
       <li>Ingredients: {{ tea.ingredients }}</li>
       <li>Rating: {{ tea.rating }}</li>
       <li>In Stock? {{ tea.inStock | inStock }}</li>
-      <li>Categories: {{ tea.categories }}
-        <ul>
-          <li ng-repeat="category in tea.categories track by $index">{{ category }}</li>
-        </ul>
+      <li>Categories: <span ng-repeat="category in tea.categories track by $index">-{{ category }}- </span>
       </li>
     </ul>
   </div>
-  <div class="quantity">
-    <label for="quantity">Quantity: {{ tea.quantity }}</label>
-    <select
-      ng-model="quantity"
-      ng-options="value.value as value.value for value in chooseQuantity">
-        <option>--</option>
-    </select>
-    <input type="button" class="button" value="Add To Cart" ng-click="addItemToCart(tea, quantity)">
-  </div>
+
 </section>
 
 <!-- customer filter to fix prices -->

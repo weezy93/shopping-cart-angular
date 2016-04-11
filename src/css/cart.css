@@ -1,5 +1,26 @@
 /* for cart / checkout page */
+#deleteItem button, #deleteAll {
+  background-color: rgb(184, 58, 48);
+  color: white;
+}
+
 section {
   display: flex;
-  flex-flow: column;
+}
+
+section * {
+  margin-left: auto;
+}
+
+.image {
+  margin-right: 4rem;
+}
+
+.cartItem {
+  margin-right: 0;
+  font-size: 1rem;
+}
+
+section ul {
+  list-style: none;
 }
