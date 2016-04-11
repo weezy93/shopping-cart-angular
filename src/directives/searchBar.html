@@ -4,17 +4,19 @@
 
       <div class="six columns">
         <label for="category">Search by Category</label>
-        <select class="twelve columns" name="select" id="category">
-          <!-- ng-options -->
-          <!-- directive to populate the categories -->
-          <option value="select">select</option>
+        <select
+        class="twelve columns"
+        name="select" id="category"
+        ng-model="category"
+        ng-options="category as category for category in categories">
+          <option>--</option>
           <tea-categories></tea-categories>
         </select>
       </div>
 
       <div class="six columns">
         <label for="teaName">Search By Name:</label>
-        <input class="twelve columns" type="text" name="teaName" placeholder="tea" id="teaName">
+        <input class="twelve columns" type="text" name="teaName" placeholder="tea" id="teaName" ng-model="search">
       </div>
 
     </div> <!-- end row div -->
