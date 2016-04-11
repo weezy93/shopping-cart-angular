@@ -11,7 +11,8 @@ angular.module('shoppingCartApp')
         "rating": 1,
         "imageUrl": "http://s7d5.scene7.com/is/image/Teavana/32664_d?$cimg$",
         "__v": 0,
-        "categories": [ "dark", "cold"]
+        "categories": [ "dark", "cold"],
+        "quantity": 1
     }],
     quantity: [
           {"value": 1},
